@@ -1,0 +1,71 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center;
+  background-color: #333; /* Dark background */
+  padding: 1em;
+  color: white; /* White text */
+}
+
+/* Logo styling */
+.navbar-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white; /* White text for logo */
+  text-decoration: none;
+}
+
+/* Navbar links container */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2em; /* Spacing between links */
+  margin-right: 1em; /* Align links to the right */
+}
+
+/* Styling for all links */
+.navbar-links a,
+.login-signup-link {
+  color: white; /* White text */
+  text-decoration: none; /* No underline */
+  cursor: pointer;
+}
+
+.navbar-links a:hover,
+.login-signup-link:hover {
+  text-decoration: none; /* No hover effect */
+}
+
+/* Dropdown container */
+.dropdown-container {
+  position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position dropdown below the Login/Signup link */
+  right: 0; /* Align dropdown to the right */
+  background-color: white; /* White background for dropdown */
+  color: black; /* Black text for dropdown items */
+  list-style: none;
+  padding: 0.5em 0;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f4f4f4; /* Light gray hover effect */
+}
